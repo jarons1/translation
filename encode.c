@@ -5,6 +5,10 @@ int print_bits(int ch){
     printf("%s", "\n");
     return 0;
   }
+  if (ch == 32){
+    printf("%s", " ");
+    return 0;
+  }
   int count=0;
   int bin[CHAR_BIT];
   while (count < CHAR_BIT) {
